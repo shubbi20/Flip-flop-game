@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+    border: 0;
+    margin: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #22c1c3;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #fdbb2d, #22c1c3);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #fdbb2d, #22c1c3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ 
+}
+#gridbox{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+    width: 60em;
+    height: 25em;
+    grid-gap:0.3em;
+    margin: 0.1em;
+    grid-column-gap: 0.2em;
+    /* place-items: center;
+    overflow: scroll; */
+}
+
+.container{
+    position: relative;
+    width: 90%;
+    height: 80%;
+    /* background: green; */
+    border-radius: 2.1em;
+    margin: 1em;
+    /* border: 0.1em solid palegoldenrod; */
+}
+
+.thecard{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.9s ease;
+    /* background-color: blue; */
+    backface-visibility: hidden;
+    border-radius: 2.1em;
+    border: 0.1em solid black;
+}
+/* .thecard:hover{
+    transform: rotateY(180deg);
+} */
+
+.thefront{
+    position:absolute;
+    width:100%;
+    height:100%;
+    backface-visibility: hidden;
+    background-color: coral;
+    border-radius: 2.1em;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    color: aliceblue;
+    
+    
+}
+
+.theback{
+    position:absolute;
+    width:100%;
+    height:100%;
+    backface-visibility: hidden;
+    background-color:cornflowerblue;
+    transform: rotateY(180deg);
+    border-radius: 2.1em;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    font-weight: bolder;
+    color: aliceblue;
+    padding-top: 0.7em; 
+    
+}
+
+.flipper {
+    transform: rotateY(180deg);
+  }
+
+h1{
+    font-size: larger;
+    font-weight: bolder;
+    font-size: 2.7em;
+}
+
+/* .popup {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    display: none;
+  } */
+
+  @media (max-width: 600px) {
+    h2 {
+      font-size: 1rem !important;
+    }
+  }
