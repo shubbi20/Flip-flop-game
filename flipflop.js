@@ -43,7 +43,7 @@ for(let card1 of cardon2){
         card1.firstChild.classList.add("flipper");
 
          setTimeout(() => {
-           if(card1.firstChild.lastChild.innerHTML !== clickable.firstChild.lastChild.innerHTML){
+           if(card1.firstChild.lastChild.innerHTML !== clickable.lastChild.innerHTML){
            card1.firstChild.classList.remove("flipper");
            clickable.firstChild.classList.remove("flipper");
            }else{
