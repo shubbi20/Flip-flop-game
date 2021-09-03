@@ -58,6 +58,8 @@ for(let card1 of cardon2){
          
             clickable=undefined;
           }, 500);
+          
+          }
 
         }
       else{                //1st turn(first card flipped-->1st we need to flip first card then we can compare it with other)
