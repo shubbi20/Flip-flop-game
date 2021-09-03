@@ -46,7 +46,7 @@ for(let card1 of cardon2){
             card1.firstChild.classList.add("flipper");    //flipping the 2nd card(then we compare it with first card)
                
          setTimeout(() => {
-           if(card1.firstChild.lastChild.innerHTML !== clickable.lastChild.innerHTML){    //checking,if both card does not equal,flip both of them
+           if(card1.firstChild.lastChild.innerHTML !== clickable.firstChild.lastChild.innerHTML){    //checking,if both card does not equal,flip both of them
            card1.firstChild.classList.remove("flipper");
            clickable.firstChild.classList.remove("flipper");
            }
