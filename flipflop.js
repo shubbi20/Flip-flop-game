@@ -37,7 +37,7 @@ for(let card1 of cardon2){
      
 
     card1.addEventListener('click',()=>{
-      if(clickable){
+      if(clickable && turns!==0){
        
            if(!card1.firstChild.classList.contains("flipper")){ //checking if we are not clicking the already flipped card
                                                               
