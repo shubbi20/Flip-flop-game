@@ -35,7 +35,7 @@ let turns=30;
 for(let card1 of cardon2){
     
      
-   if(turns!==0){
+   if(turns>0){
     card1.addEventListener('click',()=>{
       if(clickable && turns!==0){
        
